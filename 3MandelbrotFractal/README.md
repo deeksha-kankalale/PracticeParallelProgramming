@@ -9,24 +9,24 @@
 
 For the **Julia set**:
 
-* Each pixel ? $z_0 = x + iy$ (based on pixel coordinates).
+* Each pixel $z_0 = x + iy$ (based on pixel coordinates).
 * $c$ = fixed constant (same for all pixels).
 * Iterate $z_{n+1} = z_n^2 + c$.
 
 For the **Mandelbrot set**:
 
-* Each pixel ? $c = x + iy$ (based on pixel coordinates).
+* Each pixel $c = x + iy$ (based on pixel coordinates).
 * Start with $z_0 = 0$.
 * Iterate $z_{n+1} = z_n^2 + c$.
 
-? The **formula stays the same**, but you just swap which variable is fixed and which comes from the pixel.
+The **formula stays the same**, but you just swap which variable is fixed and which comes from the pixel.
 
 ---
-
-? **Summary Table:**
+**Summary Table:**
 
 | Fractal Type   | Pixel ? Complex Value | Fixed Value        | Start $z_0$  |
 | -------------- | --------------------- | ------------------ | ------------ |
 | Julia Set      | $z_0 = x+iy$          | $c = \text{const}$ | $z_0 = x+iy$ |
 | Mandelbrot Set | $c = x+iy$            | $z_0 = 0$          | $z_0 = 0$    |
 The **iteration kernel** will look identical, but how you initialize **z** and **c** will differ.
+
