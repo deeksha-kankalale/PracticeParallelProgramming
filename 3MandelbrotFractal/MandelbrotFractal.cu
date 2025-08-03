@@ -24,18 +24,15 @@ __device__ int Mandelbrot (float x, float y, int width, int height){
     float z_imag = 0;
 
     int i;
-    for (i=0; i<max_iter; i++){
-        // implement z^2 (of z =  z^2 + C)
-        z_real = z_real * z_real - z_imag * z_imag; // a^2 - b^2
-        z_imag = 2.0f * z_real * z_imag; // 2ab
-        // add Mandelbrot set constant
-        z_real = z_real + C_real;
-        z_imag = z_imag + C_imag;
-    if ((z_real * z_real + z_imag * z_imag) > 4.0f) {
-        break;
-    }
-    }
+   for (i = 0; i < max_iter; i++) {
+    float new_real = z_real * z_real - z_imag * z_imag + C_real;
+    float new_imag = 2.0f * z_real * z_imag + C_imag;
 
+    z_real = new_real;
+    z_imag = new_imag;
+
+    if (z_real * z_real + z_imag * z_imag > 4.0f) break;
+    }
     return i;
 }
 
@@ -48,7 +45,7 @@ __global__ void Kernel(unsigned char *pixelcolor, int width, int height){
     int iter = Mandelbrot (x, y, width, height);
 
 
-    // map iteration count from julia set to pixel colour(0-255)
+    // map iteration count from Mandelbrot set to pixel colour(0-255)
 
     int colour = (iter * 255)/200; //assuming max iter is 200
 
