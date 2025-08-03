@@ -30,3 +30,5 @@ The **formula stays the same**, but you just swap which variable is fixed and wh
 | Mandelbrot Set | $c = x+iy$            | $z_0 = 0$          | $z_0 = 0$    |
 The **iteration kernel** will look identical, but how you initialize **z** and **c** will differ.
 
+
+![Mandelbrot Fractal diagram](MandelbrotFractal.png)
