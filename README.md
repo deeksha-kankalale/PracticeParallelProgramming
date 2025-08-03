@@ -1,5 +1,5 @@
 # PracticeParallelProgramming
 
-Matrix Addition
-Julia set
-Mandelbrot Fractals
+Matrix Addition  
+Julia set  
+Mandelbrot Fractals  
