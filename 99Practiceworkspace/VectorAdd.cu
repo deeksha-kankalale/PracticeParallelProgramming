@@ -8,6 +8,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <vector>
+#include <cuda_runtime.h>
 
 using namespace std;
 
