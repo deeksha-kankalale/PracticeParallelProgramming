@@ -11,5 +11,5 @@ All the bench marking are done on Jetson TX2 and Nvidia Orin Nano development bo
 
 
 <p align="center">
-  <img src="Assets/DevelopmentBoard.jpg" alt="Development Board" width="400" height="300"/>
+  <img src="Assets/DevelopmentBoard.jpg" alt="Development Board" width="400" height="600"/>
 </p>
