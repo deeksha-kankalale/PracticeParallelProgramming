@@ -6,6 +6,6 @@ Mandelbrot Fractals
 
 
 
-
-
-<img src="assets/DevelopmentBoard.jpg" alt="Description" width="400">
+<p align="center">
+  <img src="Assets/DevelopmentBoard.jpg" alt="Development Board" width="500" />
+</p>
